@@ -423,8 +423,8 @@ for section, patterns in MAPPING_PATTERNS.items():
     labels = list(patterns.keys())
     embs = bert_model.encode(labels, convert_to_tensor=True)
     STD_LABEL_EMBEDDINGS[section] = {lbl: emb for lbl, emb in zip(labels, embs)}
-
-# My OpenAI configuration here(privacy issues)
+'''
+# My OpenAI configuration here(privacy issues put your key and endpoint to use LLM)
 client = AzureOpenAI(
     api_key="apikeys",
     api_version="version",
@@ -454,7 +454,7 @@ def llm_fallback(label: str, section: str) -> Optional[str]:
 
     ans = response.choices[0].message.content.strip()
     return ans if ans in MAPPING_PATTERNS.get(section, {}) else None
-
+'''
 # making data clear and normalizing the value for easy understandibility
 
 def enhanced_normalization(label: str) -> str:
@@ -468,7 +468,7 @@ def enhanced_normalization(label: str) -> str:
 def final_match(label: str, section: str) -> Optional[str]:
     norm = enhanced_normalization(label)
     print(f"\n→ Matching: '{label}' | normalized: '{norm}' | section: '{section}'")
-
+    
     # 1. Regex 
     best = None
     for std, cfgs in MAPPING_PATTERNS.get(section, {}).items():
@@ -500,15 +500,19 @@ def final_match(label: str, section: str) -> Optional[str]:
             print(f"✔ BERT match: {bert_key} (score: {top_score:.2f})")
             return bert_key
 
-    # 4. LLM 
+
+    # 4. LLM (uncomment only if you have put your  key and endpoint in above AI configuration)
+    '''
     if MATCHING_CONFIG.get('enable_llm', False):
         llm_key = llm_fallback(label, section)
         if llm_key:
             print(f"✔ LLM match: {llm_key}")
             return llm_key
+    '''
 
     print("✘ No match")
     return None
+
 
 
  
@@ -529,7 +533,7 @@ def validate_essential_fields(mappings: Dict[str, pd.Series], section: str) -> b
     if missing:
         print(f"\u26a0\ufe0f Missing essential fields for {section}: {missing}") # with unicode for warning sign
     return not missing
-#-----------------date row-------------------------------------------------------
+
 def promote_date_row(df: pd.DataFrame) -> pd.DataFrame:
     """
     Search the first 4 rows for date-like patterns and promote header row

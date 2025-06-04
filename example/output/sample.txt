@@ -1,1 +1,66 @@
-this is expected output
+Mapped keys: ['data', 'validation', 'stats']
+data: {'cash_equivalents': Dec. 31, 2024    16139
+Dec. 31, 2023    16398
+Name: cash and cash equivalents, dtype: int64, 'shortterm_investments': Dec. 31, 2024    20424
+Dec. 31, 2023    12696
+Name: shortterm investments, dtype: int64, 'accounts_receivable_net': Dec. 31, 2024    4418
+Dec. 31, 2023    3508
+Name: accounts receivable net, dtype: int64, 'inventory': Dec. 31, 2024    12017
+Dec. 31, 2023    13626
+Name: inventory, dtype: int64, 'prepaid_expenses': Dec. 31, 2024    5362
+Dec. 31, 2023    3388
+Name: prepaid expenses and other current assets, dtype: int64, 'current_assets': Dec. 31, 2024    58360
+Dec. 31, 2023    49616
+Name: total current assets, dtype: int64, 'property_plant_equipment': Dec. 31, 2024    35836
+Dec. 31, 2023    29725
+Name: property plant and equipment net, dtype: int64, 'operating_lease_assets': Dec. 31, 2024    5160
+Dec. 31, 2023    4180
+Name: operating lease rightofuse assets, dtype: int64, 'digital_assets_net': Dec. 31, 2024    1076
+Dec. 31, 2023     184
+Name: digital assets net, dtype: int64, 'intangible_assets_net': Dec. 31, 2024    150
+Dec. 31, 2023    178
+Name: intangible assets net, dtype: int64, 'goodwill': Dec. 31, 2024    244
+Dec. 31, 2023    253
+Name: goodwill, dtype: int64, 'deferred_taxes': Dec. 31, 2024    3317
+Dec. 31, 2023    3251
+Name: deferred revenue net of current portion, dtype: int64, 'other_noncurrent_assets': Dec. 31, 2024    4215
+Dec. 31, 2023    4531
+Name: other noncurrent assets, dtype: int64, 'total_assets': Dec. 31, 2024    122070
+Dec. 31, 2023    106618
+Name: total assets, dtype: int64, 'accounts_payable': Dec. 31, 2024    12474
+Dec. 31, 2023    14431
+Name: accounts payable, dtype: int64, 'accrued_liabilities': Dec. 31, 2024    10723
+Dec. 31, 2023     9080
+Name: accrued liabilities and other, dtype: int64, 'current_portion_of_debt_and_finance_leases': Dec. 31, 2024    2456
+Dec. 31, 2023    2373
+Name: current portion of debt and finance leases, dtype: int64, 'current_liabilities': Dec. 31, 2024    28821
+Dec. 31, 2023    28748
+Name: total current liabilities, dtype: int64, 'long_term_debt': Dec. 31, 2024    5757
+Dec. 31, 2023    2857
+Name: debt and finance leases net of current portion, dtype: int64, 'other_longterm_liabilities': Dec. 31, 2024    10495
+Dec. 31, 2023     8153
+Name: other longterm liabilities, dtype: int64, 'total_liabilities': Dec. 31, 2024    48390
+Dec. 31, 2023    43009
+Name: total liabilities, dtype: int64, 'redeemable_noncontrolling_interest': Dec. 31, 2024    704
+Dec. 31, 2023    733
+Name: noncontrolling interests in subsidiaries, dtype: int64, 'preferred_stock': Dec. 31, 2024    0
+Dec. 31, 2023    0
+Name: preferred stock 0001 par value 100 shares authorized no shares issued and outstanding, dtype: int64, 'common_stock': Dec. 31, 2024    3
+Dec. 31, 2023    3
+Name: common stock 0001 par value 6000 shares authorized 3216 and 3185 shares issued and outstanding as of december 31 2024 and december 31 2023 respectively, dtype: int64, 'additional_paid_in_capital': Dec. 31, 2024    38371
+Dec. 31, 2023    34892
+Name: additional paidin capital, dtype: int64, 'accumulated_other_comprehensive_loss': Dec. 31, 2024   -670
+Dec. 31, 2023   -143
+Name: accumulated other comprehensive loss, dtype: int64, 'retained_earnings': Dec. 31, 2024    35209
+Dec. 31, 2023    27882
+Name: retained earnings, dtype: int64, 'total_stockholders_equity': Dec. 31, 2024    72913
+Dec. 31, 2023    62634
+Name: total stockholders equity, dtype: int64, 'grand_total_liabilities_equity': Dec. 31, 2024    122070
+Dec. 31, 2023    106618
+Name: total liabilities and equity, dtype: int64, 'operating_lease_vehicles_net': Dec. 31, 2024    5581
+Dec. 31, 2023    5989
+Name: operating lease vehicles net, dtype: int64, 'solar_energy_systems_net': Dec. 31, 2024    4924
+Dec. 31, 2023    5229
+Name: solar energy systems net, dtype: int64}
+validation: {'section': 'balance', 'valid': False}
+stats: {'matched': 34, 'skipped': 0}

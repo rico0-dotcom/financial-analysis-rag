@@ -1,1 +1,43 @@
-this is a sample input 
+Consolidated Balance Sheets - USD ($) $ in Millions	Dec. 31, 2024	Dec. 31, 2023
+Current assets	 	 
+Cash and cash equivalents	 $ 16,139 	 $ 16,398 
+Short-term investments	20,424	12,696
+Accounts receivable, net	4,418	3,508
+Inventory	12,017	13,626
+Prepaid expenses and other current assets	5,362	3,388
+Total current assets	58,360	49,616
+Property, plant and equipment, net	35,836	29,725
+Operating lease right-of-use assets	5,160	4,180
+Digital assets, net	1,076	184
+Intangible assets, net	150	178
+Goodwill	244	253
+Deferred tax assets	6,524	6,733
+Other non-current assets	4,215	4,531
+Total assets	1,22,070	1,06,618
+Current liabilities	 	 
+Accounts payable	12,474	14,431
+Accrued liabilities and other	10,723	9,080
+Deferred revenue	3,168	2,864
+Current portion of debt and finance leases	2,456	2,373
+Total current liabilities	28,821	28,748
+Debt and finance leases, net of current portion	5,757	2,857
+Deferred revenue, net of current portion	3,317	3,251
+Other long-term liabilities	10,495	8,153
+Total liabilities	48,390	43,009
+Commitments and contingencies (Note 14)	 	 
+Redeemable noncontrolling interests in subsidiaries	63	242
+Stockholders’ equity	 	 
+Preferred stock; $0.001 par value; 100 shares authorized; no shares issued and outstanding	0	0
+Common stock; $0.001 par value; 6,000 shares authorized; 3,216 and 3,185 shares issued and outstanding as of December 31, 2024 and December 31, 2023, respectively	3	3
+Additional paid-in capital	38,371	34,892
+Accumulated other comprehensive loss	-670	-143
+Retained earnings	35,209	27,882
+Total stockholders’ equity	72,913	62,634
+Noncontrolling interests in subsidiaries	704	733
+Total liabilities and equity	1,22,070	1,06,618
+Operating Lease Vehicles	 	 
+Current assets	 	 
+Operating lease vehicles, net	5,581	5,989
+Solar energy systems, net	 	 
+Current assets	 	 
+Solar energy systems, net	 $ 4,924 	 $ 5,229 

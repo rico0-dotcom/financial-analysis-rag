@@ -1,3 +1,3 @@
-input file contains 10K financial statement of Tesla's balance sheet,
+input file contains 10K financial statement of Tesla's balance sheet(which is originally in excel format),
 output file contains the demo of the self-learning-parser where it properly parses and categorizes the financial labels from the financial statements
 and store it for further analysis. It parses 100% of the data correctly and skip the unnecessary lines

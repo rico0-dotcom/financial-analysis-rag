@@ -21,7 +21,7 @@ Name: digital assets net, dtype: int64, 'intangible_assets_net': Dec. 31, 2024  
 Dec. 31, 2023    178
 Name: intangible assets net, dtype: int64, 'goodwill': Dec. 31, 2024    244
 Dec. 31, 2023    253
-Name: goodwill, dtype: int64, 'deferred_taxes': Dec. 31, 2024    3317
+Name: goodwill, dtype: int64, 'deferred_revenue': Dec. 31, 2024    3317
 Dec. 31, 2023    3251
 Name: deferred revenue net of current portion, dtype: int64, 'other_noncurrent_assets': Dec. 31, 2024    4215
 Dec. 31, 2023    4531
@@ -41,7 +41,7 @@ Name: debt and finance leases net of current portion, dtype: int64, 'other_longt
 Dec. 31, 2023     8153
 Name: other longterm liabilities, dtype: int64, 'total_liabilities': Dec. 31, 2024    48390
 Dec. 31, 2023    43009
-Name: total liabilities, dtype: int64, 'redeemable_noncontrolling_interest': Dec. 31, 2024    704
+Name: total liabilities, dtype: int64, 'noncontrolling interests in subsidiaries': Dec. 31, 2024    704
 Dec. 31, 2023    733
 Name: noncontrolling interests in subsidiaries, dtype: int64, 'preferred_stock': Dec. 31, 2024    0
 Dec. 31, 2023    0

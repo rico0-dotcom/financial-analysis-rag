@@ -28,5 +28,12 @@ This project repo serves as a **promotional showcase** for an in-development Saa
 - **Executive Summaries:** GPT-based natural language explanations for decision-makers  
 - **White-Label Ready:** Designed for easy SaaS or API integration under your brand  
 - **Custom Formula Support:** Users can define their own ratios
+- **Human-in-the-Loop (HITL) Mode:** Asks for manual review on low-confidence matches to ensure accuracy and auditability
 
 ---
+## Who's this for
+✅ Fintech apps looking to embed financial analysis under their own brand  
+✅ Accounting firms delivering advisory services at scale  
+✅ Lenders assessing client health in seconds  
+✅ CFO dashboards wanting to explain trends in plain English  
+✅ Any platform that wants to automate spreadsheet-heavy analysis etc...

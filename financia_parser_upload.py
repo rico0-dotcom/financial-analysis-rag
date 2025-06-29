@@ -1,4 +1,4 @@
-
+# this is just a basic version of SELF Learning parser (its only matches the mapping terms with financial statement no memory of it to learn and improve)
 import re
 import os
 import pandas as pd

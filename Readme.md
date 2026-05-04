@@ -14,26 +14,32 @@ The system is designed to handle inconsistencies in financial statement formats 
 - Performs multi-period trend analysis
   
 **3. Methodology**
+
 3.1 Data Extraction
 - Reads Excel-based financial statements
 - Identifies sections and line items using rule-based logic and pattern recognition
+  
 3.2 Line Item Mapping
 - Rule-based keyword matching
 - Fuzzy string matching (RapidFuzz)
 - Embedding similarity (SentenceTransformers)
 - Maps raw entries (e.g., 'Net profit after tax') to standardized variables
+  
 3.3 Feedback-Driven Mapping System
 - Persistent mapping using JSON file
 - Stores validated mappings across runs
 - Human-in-the-loop (HITL) review for low-confidence matches
 - Ensures auditability and reproducibility
+  
 3.4 Data Structuring
 - Converts extracted data into tabular format
 - Handles inconsistencies and missing values
 - Produces datasets ready for analysis
+  
 3.5 Ratio Computation
 - Computes profitability, liquidity, and leverage ratios
 - Supports custom user-defined ratios
+  
 3.6 Trend Analysis
 - Multi-period comparison of financial metrics
 - Identifies directional trends

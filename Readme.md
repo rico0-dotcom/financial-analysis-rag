@@ -5,7 +5,7 @@ This project implements a Python-based pipeline for extracting, structuring, and
 
 The system is designed to handle inconsistencies in financial statement formats and convert them into structured datasets suitable for empirical financial analysis.
 
-** 2. Functionality**
+**2. Functionality**
 - Parses financial statements (Income Statement, Balance Sheet, Cash Flow)
 - Extracts and normalizes line items from raw Excel inputs
 - Maps extracted entries to standardized financial variables

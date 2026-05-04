@@ -1,39 +1,77 @@
-# 📈 White-Label Financial Statement AI Analytics Engine(FinAI Analytics)
+Financial Statement Analysis System
+**1. Overview**
+This project implements a Python-based pipeline for extracting, structuring, and analyzing financial statement data from Excel files.
 
-**Turn static financial statements into clear, explainable, automated insights—under your brand.**  
+The system is designed to handle inconsistencies in financial statement formats and convert them into structured datasets suitable for empirical financial analysis.
 
-This project repo serves as a **promotional showcase** for an in-development SaaS/API solution designed to help fintechs, lenders, and accounting firms automate ratio analysis, trend detection, and executive reporting.
+** 2. Functionality**
+- Parses financial statements (Income Statement, Balance Sheet, Cash Flow)
+- Extracts and normalizes line items from raw Excel inputs
+- Maps extracted entries to standardized financial variables
+- Generates structured datasets for analysis
+- Computes financial ratios
+- Performs multi-period trend analysis
+  
+**3. Methodology**
+3.1 Data Extraction
+- Reads Excel-based financial statements
+- Identifies sections and line items using rule-based logic and pattern recognition
+3.2 Line Item Mapping
+- Rule-based keyword matching
+- Fuzzy string matching (RapidFuzz)
+- Embedding similarity (SentenceTransformers)
+- Maps raw entries (e.g., 'Net profit after tax') to standardized variables
+3.3 Feedback-Driven Mapping System
+- Persistent mapping using JSON file
+- Stores validated mappings across runs
+- Human-in-the-loop (HITL) review for low-confidence matches
+- Ensures auditability and reproducibility
+3.4 Data Structuring
+- Converts extracted data into tabular format
+- Handles inconsistencies and missing values
+- Produces datasets ready for analysis
+3.5 Ratio Computation
+- Computes profitability, liquidity, and leverage ratios
+- Supports custom user-defined ratios
+3.6 Trend Analysis
+- Multi-period comparison of financial metrics
+- Identifies directional trends
+  
+**4. Key Features**
+- Handles heterogeneous financial statement formats
+- Combines rule-based and NLP-based extraction
+- Produces structured datasets for empirical analysis
+- Persistent mapping system for consistency
+- Human-in-the-loop validation
+- Custom ratio support
+  
+**5. Example Workflow**
+1. Upload Excel financial statements
+2. Run parsing pipeline
+3. Generate structured dataset
+4. Compute ratios and trends
 
----
+**6. Technologies Used**
+- Python (Pandas, NumPy)
+- SentenceTransformers
+- RapidFuzz
+- Scikit-learn
+  
+**7. Repository Structure**
+- main.py
+- financial_parsing_horizontal.py
+- ratio.py
+- mapping.json
+- requirements.txt
+  
+**8. Relevance**
+- Financial data extraction and cleaning
+- Handling unstructured financial disclosures
+- Preparing datasets for econometric analysis
 
-## 🚀 What It Does
+**9. Status**
+Work in progress. Core pipeline implemented with ongoing improvements.
 
-✅ Upload Excel-based financial statements  
-✅ Automatically parse and classify sections (Income Statement, Balance Sheet, Cash Flow)  
-✅ Extract line items with a *self-learning NLP parser* (SentenceTransformers / BERT + fuzzy matching,LLM)  
-✅ Calculate 15+ financial ratios (profitability, liquidity, solvency, valuation)  
-✅ Perform multi-year trend analysis  
-✅ Generate **clear, human-readable executive summaries** via LLM Model
-✅ Support **custom user-defined ratios**  
-✅ Export structured reports ready for clients
-
----
-
-## 🎯 Key Features
-
-- **Self-Learning Parser:** Adapts to diverse, inconsistent statement formats  
-- **NLP-Powered Extraction:** Aligns raw line items with standardized financial concepts  
-- **Advanced Ratio Engine:** Calculates core financial health metrics  
-- **Trend Analysis:** Compares ratios over multiple years to highlight patterns  
-- **Executive Summaries:** GPT-based natural language explanations for decision-makers  
-- **White-Label Ready:** Designed for easy SaaS or API integration under your brand  
-- **Custom Formula Support:** Users can define their own ratios
-- **Human-in-the-Loop (HITL) Mode:** Asks for manual review on low-confidence matches to ensure accuracy and auditability
-
----
-## Who's this for
-✅ Fintech apps looking to embed financial analysis under their own brand  
-✅ Accounting firms delivering advisory services at scale  
-✅ Lenders assessing client health in seconds  
-✅ CFO dashboards wanting to explain trends in plain English  
-✅ Any platform that wants to automate spreadsheet-heavy analysis etc...
+**10. How to Run**
+pip install -r requirements.txt
+python main.py

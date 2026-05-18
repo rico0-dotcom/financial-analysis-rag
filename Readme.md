@@ -199,23 +199,6 @@ working of ratioEngine20mb.mp4
 
 ---
 
-# Repository Structure
-
-```text
-financial-statement-analysis-system/
-│
-├── main.py
-├── financial_parsing_horizontal.py
-├── ratio.py
-├── mapping.json
-├── requirements.txt
-│
-├── Walmart_financial_report.xlsx
-├── working of ratioEngine20mb.mp4
-├── ratio engine flowchart.png
-│
-└── README.md
-```
 
 ---
 
@@ -258,6 +241,7 @@ financial-statement-analysis-system/
 - Custom ratio framework
 - Trend analysis pipeline
 - Structured analytical dataset generation
+- Low-confidence mappings can optionally be escalated to LLM-assisted interpretation for additional semantic resolution.
 
 ---
 

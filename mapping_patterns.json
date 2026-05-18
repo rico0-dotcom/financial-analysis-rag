@@ -1,0 +1,5788 @@
+{
+    "income": {
+        "net_sales": [
+            {
+                "pattern": "^net(sales)$",
+                "priority": 1
+            },
+            {
+                "pattern": "^sales(net)?$",
+                "priority": 2
+            }
+        ],
+        "total_revenue": [
+            {
+                "pattern": "totalrevenues?",
+                "priority": 1
+            },
+            {
+                "pattern": "revenues?(net)?",
+                "priority": 2
+            }
+        ],
+        "cost_of_sales": [
+            {
+                "pattern": "costofsales",
+                "priority": 1
+            },
+            {
+                "pattern": "cogs",
+                "priority": 2
+            }
+        ],
+        "operating_expenses": [
+            {
+                "pattern": "operatingsellinggeneralandadministrativeexpenses",
+                "priority": 1
+            },
+            {
+                "pattern": "opex",
+                "priority": 2
+            },
+            {
+                "pattern": "costsandexpenses",
+                "priority": 3
+            }
+        ],
+        "operating_income": [
+            {
+                "pattern": "operatingincome",
+                "priority": 1
+            },
+            {
+                "pattern": "ebit",
+                "priority": 2
+            }
+        ],
+        "interest_expense": [
+            {
+                "pattern": "^interest(expense)?(net)?$",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest(expense)?$",
+                "priority": 2
+            },
+            {
+                "pattern": "^interest(expense)?(and)?(finance)?(cost)?$",
+                "priority": 3
+            },
+            {
+                "pattern": "^interest(on)?(debt|lease)?$",
+                "priority": 4
+            }
+        ],
+        "noncontrolling_interest": [
+            {
+                "pattern": "netincomelossattributablenoncontrollinginterest",
+                "priority": 1
+            }
+        ],
+        "interest_income": [
+            {
+                "pattern": "interestincome",
+                "priority": 1
+            }
+        ],
+        "other_gains_losses": [
+            {
+                "pattern": "othergainsandlosses",
+                "priority": 1
+            }
+        ],
+        "pre_tax_income": [
+            {
+                "pattern": "incomebeforeincometaxes",
+                "priority": 1
+            }
+        ],
+        "tax_expense": [
+            {
+                "pattern": "provisionforincometaxes",
+                "priority": 1
+            }
+        ],
+        "net_income": [
+            {
+                "pattern": "^(?!basic|diluted)netincome",
+                "priority": 1
+            },
+            {
+                "pattern": "consolidatednetincomeattributableto.*",
+                "priority": 2
+            },
+            {
+                "pattern": "netearnings",
+                "priority": 3
+            }
+        ],
+        "eps_basic": [
+            {
+                "pattern": "basicnetincomepercommonshare",
+                "priority": 1
+            }
+        ],
+        "eps_diluted": [
+            {
+                "pattern": "dilutednetincomepercommonshare",
+                "priority": 1
+            }
+        ],
+        "shares_basic": [
+            {
+                "pattern": "weightedaveragecommonsharesoutstandingbasic",
+                "priority": 1
+            }
+        ],
+        "shares_diluted": [
+            {
+                "pattern": "weightedaveragecommonsharesoutstandingdiluted",
+                "priority": 1
+            }
+        ],
+        "dividends_per_share": [
+            {
+                "pattern": "dividendsdeclaredpercommonshare",
+                "priority": 1
+            }
+        ],
+        "gross_profit": [
+            {
+                "pattern": "grossprofit",
+                "priority": 1
+            }
+        ],
+        "preferred_dividends": [
+            {
+                "pattern": "preferreddividends",
+                "priority": 1
+            },
+            {
+                "pattern": "dividendspreferred",
+                "priority": 2
+            }
+        ],
+        "ebitda": [
+            {
+                "pattern": "ebitda",
+                "priority": 1
+            },
+            {
+                "pattern": "earningsbeforeinteresttaxesdepreciationamortization",
+                "priority": 2
+            }
+        ],
+        "financial_statement_label": [
+            {
+                "pattern": "^6.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^0.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^1.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^2.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^3.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^4.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^5.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^6.*",
+                "priority": 1
+            }
+        ],
+        "financial_statement_label_7": [
+            {
+                "pattern": "^7.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^7.*",
+                "priority": 1
+            }
+        ],
+        "financial_statement_label_8": [
+            {
+                "pattern": "^8.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^8.*",
+                "priority": 1
+            }
+        ],
+        "financial_statement_label_9": [
+            {
+                "pattern": "^9.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^9.*",
+                "priority": 1
+            }
+        ],
+        "financial_statement_label_10": [
+            {
+                "pattern": "^10.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^10.*",
+                "priority": 1
+            }
+        ],
+        "financial_statement_label_11": [
+            {
+                "pattern": "^11.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^11.*",
+                "priority": 1
+            }
+        ],
+        "indefinitelived_intangible_asset_impairment_charge": [
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^indefinitelived.*intangible.*asset.*impairment.*charge.*nan.*",
+                "priority": 1
+            }
+        ],
+        "membership_and_other_income": [
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^membership.*other.*income.*",
+                "priority": 1
+            }
+        ],
+        "finance_lease_expense": [
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^finance.*lease.*",
+                "priority": 1
+            }
+        ],
+        "auditor_firm_id": [
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^auditor.*firm.*id.*",
+                "priority": 1
+            }
+        ],
+        "cash_and_cash_equivalents": [
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^cash.*cash.*equivalents.*",
+                "priority": 1
+            }
+        ],
+        "shortterm_investments": [
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            }
+        ],
+        "accounts_receivable_net": [
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*receivable.*net.*",
+                "priority": 1
+            }
+        ],
+        "inventory": [
+            {
+                "pattern": "^inventory.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^inventory.*",
+                "priority": 1
+            }
+        ],
+        "prepaid_expenses_and_other_current_assets": [
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^prepaid.*expenses.*other.*current.*assets.*",
+                "priority": 1
+            }
+        ],
+        "total_current_assets": [
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*assets.*",
+                "priority": 1
+            }
+        ],
+        "property_plant_and_equipment_net": [
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^property.*plant.*equipment.*net.*",
+                "priority": 1
+            }
+        ],
+        "operating_lease_rightofuse_assets": [
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*rightofuse.*assets.*",
+                "priority": 1
+            }
+        ],
+        "digital_assets_net": [
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            }
+        ],
+        "intangible_assets_net": [
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            }
+        ],
+        "goodwill": [
+            {
+                "pattern": "^goodwill.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^goodwill.*",
+                "priority": 1
+            }
+        ],
+        "deferred_tax_assets": [
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^deferred.*tax.*assets.*",
+                "priority": 1
+            }
+        ],
+        "other_noncurrent_assets": [
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*noncurrent.*assets.*",
+                "priority": 1
+            }
+        ],
+        "total_assets": [
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*assets.*",
+                "priority": 1
+            }
+        ],
+        "accounts_payable": [
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accounts.*payable.*",
+                "priority": 1
+            }
+        ],
+        "accrued_liabilities_and_other": [
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accrued.*liabilities.*other.*",
+                "priority": 1
+            }
+        ],
+        "current_portion_of_debt_and_finance_leases": [
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^current.*portion.*debt.*finance.*leases.*",
+                "priority": 1
+            }
+        ],
+        "total_current_liabilities": [
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*current.*liabilities.*",
+                "priority": 1
+            }
+        ],
+        "other_longterm_liabilities": [
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            }
+        ],
+        "total_liabilities": [
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*liabilities.*",
+                "priority": 1
+            }
+        ],
+        "preferred_stock_par_value_no_shares_issued_outstanding": [
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^preferred.*stock.*0001.*par.*value.*100.*shares.*authorized.*no.*shares.*issued.*outstanding.*",
+                "priority": 1
+            }
+        ],
+        "common_stock_par_value_shares_authorized_issued_outstanding": [
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^common.*stock.*0001.*par.*value.*6000.*shares.*authorized.*3216.*3185.*shares.*issued.*outstanding.*as.*december.*31.*2024.*december.*31.*2023.*respectively.*",
+                "priority": 1
+            }
+        ],
+        "additional_paid_in_capital": [
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^additional.*paidin.*capital.*",
+                "priority": 1
+            }
+        ],
+        "accumulated_other_comprehensive_loss": [
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^accumulated.*other.*comprehensive.*loss.*",
+                "priority": 1
+            }
+        ],
+        "retained_earnings": [
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^retained.*earnings.*",
+                "priority": 1
+            }
+        ],
+        "total_stockholders_equity": [
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*stockholders.*equity.*",
+                "priority": 1
+            }
+        ],
+        "operating_lease_vehicles_net": [
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^operating.*lease.*vehicles.*net.*",
+                "priority": 1
+            }
+        ],
+        "solar_energy_systems_net": [
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            }
+        ],
+        "research_and_development_expenses": [
+            {
+                "pattern": "^research.*development.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            }
+        ],
+        "restructuring_and_other": [
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            }
+        ]
+    },
+    "balance": {
+        "cash_equivalents": [
+            {
+                "pattern": "cash(and)?cashequivalents",
+                "priority": 1
+            }
+        ],
+        "receivables": [
+            {
+                "pattern": "receivablesnet",
+                "priority": 1
+            },
+            {
+                "pattern": "receivables",
+                "priority": 2
+            }
+        ],
+        "inventory": [
+            {
+                "pattern": "inventories",
+                "priority": 1
+            }
+        ],
+        "prepaid_expenses": [
+            {
+                "pattern": "prepaidexpenses(andother)?",
+                "priority": 1
+            }
+        ],
+        "current_assets": [
+            {
+                "pattern": "totalcurrentassets",
+                "priority": 1
+            }
+        ],
+        "property_plant_equipment": [
+            {
+                "pattern": "property(and)?equipment(net)?",
+                "priority": 1
+            }
+        ],
+        "operating_lease_assets": [
+            {
+                "pattern": "operatingleaserightofuseassets",
+                "priority": 1
+            }
+        ],
+        "finance_lease_assets": [
+            {
+                "pattern": "financeleaserightofuseassets",
+                "priority": 1
+            }
+        ],
+        "goodwill": [
+            {
+                "pattern": "goodwill",
+                "priority": 1
+            }
+        ],
+        "other_long_term_assets": [
+            {
+                "pattern": "otherlongtermassets",
+                "priority": 1
+            }
+        ],
+        "total_assets": [
+            {
+                "pattern": "totalassets",
+                "priority": 1
+            }
+        ],
+        "short_term_borrowings": [
+            {
+                "pattern": "shorttermborrowings",
+                "priority": 1
+            }
+        ],
+        "accounts_payable": [
+            {
+                "pattern": "accountspayable",
+                "priority": 1
+            }
+        ],
+        "accrued_liabilities": [
+            {
+                "pattern": "accruedliabilities",
+                "priority": 1
+            }
+        ],
+        "accrued_income_taxes": [
+            {
+                "pattern": "accruedincometaxes",
+                "priority": 1
+            }
+        ],
+        "current_liabilities": [
+            {
+                "pattern": "totalcurrentliabilities",
+                "priority": 1
+            }
+        ],
+        "long_term_debt": [
+            {
+                "pattern": "longterm(debt|debtdueafteroneyear)",
+                "priority": 1
+            }
+        ],
+        "noncurrent_operating_lease_liabilities": [
+            {
+                "pattern": "longtermoperatingleaseobligations",
+                "priority": 1
+            }
+        ],
+        "noncurrent_finance_lease_liabilities": [
+            {
+                "pattern": "longtermfinanceleaseobligations",
+                "priority": 1
+            }
+        ],
+        "operating_lease_liabilities": [
+            {
+                "pattern": "operatingleaseobligations(due)?withinoneyear",
+                "priority": 1
+            }
+        ],
+        "finance_lease_liabilities": [
+            {
+                "pattern": "financeleaseobligations(due)?withinoneyear",
+                "priority": 1
+            }
+        ],
+        "total_liabilities": [
+            {
+                "pattern": "^total liabilities$",
+                "priority": 1
+            }
+        ],
+        "grand_total_liabilities_equity": [
+            {
+                "pattern": "^totalliabilitiesredeemablenoncontrollinginterest(and)?(shareholders|stockholders)equity$",
+                "priority": 0
+            },
+            {
+                "pattern": "^total liabilities.*(equity|stockholders')$",
+                "priority": 2
+            }
+        ],
+        "deferred_taxes": [
+            {
+                "pattern": "deferred(incometaxes)?(andother)?",
+                "priority": 1
+            }
+        ],
+        "redeemable_noncontrolling_interest": [
+            {
+                "pattern": "^redeemable noncontrolling interest$",
+                "priority": 1
+            },
+            {
+                "pattern": "redeemablenoncontrollinginterest",
+                "priority": 2
+            }
+        ],
+        "nonredeemable_noncontrolling_interest": [
+            {
+                "pattern": "^nonredeemable noncontrolling interest$",
+                "priority": 1
+            },
+            {
+                "pattern": "nonredeemablenoncontrollinginterest",
+                "priority": 2
+            }
+        ],
+        "common_stock": [
+            {
+                "pattern": "commonstock",
+                "priority": 1
+            }
+        ],
+        "capital_in_excess_of_par_value": [
+            {
+                "pattern": "capitalinexcessofparvalue",
+                "priority": 1
+            }
+        ],
+        "retained_earnings": [
+            {
+                "pattern": "retainedearnings",
+                "priority": 1
+            }
+        ],
+        "accumulated_other_comprehensive_loss": [
+            {
+                "pattern": "accumulatedothercomprehensiveloss",
+                "priority": 1
+            }
+        ],
+        "shareholders_equity": [
+            {
+                "pattern": "^total (stockholders'|shareholders') equity$",
+                "priority": 1
+            },
+            {
+                "pattern": "^stockholders'? equity$",
+                "priority": 2
+            },
+            {
+                "pattern": "^shareholders'? equity$",
+                "priority": 3
+            }
+        ],
+        "total_shareholders_equity": [
+            {
+                "pattern": "(total )?.*?(stockholders'|shareholders') equity",
+                "priority": 1
+            }
+        ],
+        "preferred_stock": [
+            {
+                "pattern": "preferredstock",
+                "priority": 1
+            }
+        ],
+        "temporary_equity": [
+            {
+                "pattern": "temporaryequity",
+                "priority": 1
+            },
+            {
+                "pattern": "redeemable.*equity",
+                "priority": 2
+            }
+        ],
+        "treasury_stock": [
+            {
+                "pattern": "treasurystock",
+                "priority": 1
+            },
+            {
+                "pattern": "commonsharesrepurchased",
+                "priority": 2
+            }
+        ],
+        "revenues": [
+            {
+                "pattern": "^revenues.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^revenues.*",
+                "priority": 1
+            }
+        ],
+        "total_cost_of_revenues": [
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^total.*cost.*revenues.*",
+                "priority": 1
+            }
+        ],
+        "gross_profit": [
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^gross.*profit.*",
+                "priority": 1
+            }
+        ],
+        "research_and_development": [
+            {
+                "pattern": "^research.*development.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^research.*development.*",
+                "priority": 1
+            }
+        ],
+        "selling_general_and_administrative": [
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^selling.*general.*administrative.*",
+                "priority": 1
+            }
+        ],
+        "restructuring_and_other": [
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^restructuring.*other.*",
+                "priority": 1
+            }
+        ],
+        "income_from_operations": [
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*from.*operations.*",
+                "priority": 1
+            }
+        ],
+        "interest_income": [
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*income.*",
+                "priority": 1
+            }
+        ],
+        "interest_expense": [
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^interest.*expense.*",
+                "priority": 1
+            }
+        ],
+        "other_income_expense_net": [
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*income.*expense.*net.*",
+                "priority": 1
+            }
+        ],
+        "income_before_income_taxes": [
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^income.*before.*income.*taxes.*",
+                "priority": 1
+            }
+        ],
+        "provision_for_benefit_from_income_taxes": [
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^provision.*benefit.*from.*income.*taxes.*",
+                "priority": 1
+            }
+        ],
+        "net_income": [
+            {
+                "pattern": "^net.*income.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*income.*",
+                "priority": 1
+            }
+        ],
+        "diluted_in_shares": [
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^diluted.*shares.*",
+                "priority": 1
+            }
+        ],
+        "short_term_investments": [
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^shortterm.*investments.*",
+                "priority": 1
+            }
+        ],
+        "digital_assets_net": [
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^digital.*assets.*net.*",
+                "priority": 1
+            }
+        ],
+        "intangible_assets_net": [
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^intangible.*assets.*net.*",
+                "priority": 1
+            }
+        ],
+        "other_longterm_liabilities": [
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^other.*longterm.*liabilities.*",
+                "priority": 1
+            }
+        ],
+        "solar_energy_systems_net": [
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^solar.*energy.*systems.*net.*",
+                "priority": 1
+            }
+        ]
+    },
+    "cashflow": {
+        "net_cash_operating": [
+            {
+                "pattern": "netcashprovidedbyoperatingactivities",
+                "priority": 1
+            }
+        ],
+        "depreciation_amortization": [
+            {
+                "pattern": "depreciationandamortization",
+                "priority": 1
+            }
+        ],
+        "investing_gains_losses": [
+            {
+                "pattern": "investmentgainsandlossesnet",
+                "priority": 1
+            }
+        ],
+        "deferred_taxes": [
+            {
+                "pattern": "deferredincometaxes",
+                "priority": 1
+            }
+        ],
+        "other_operating_activities": [
+            {
+                "pattern": "otheroperatingactivities",
+                "priority": 1
+            }
+        ],
+        "changes_in_receivables": [
+            {
+                "pattern": "receivablesnet",
+                "priority": 1
+            }
+        ],
+        "changes_in_inventory": [
+            {
+                "pattern": "inventories",
+                "priority": 1
+            }
+        ],
+        "changes_in_payables": [
+            {
+                "pattern": "accountspayable",
+                "priority": 1
+            }
+        ],
+        "changes_in_accrued_liabilities": [
+            {
+                "pattern": "accruedliabilities",
+                "priority": 1
+            }
+        ],
+        "changes_in_income_taxes": [
+            {
+                "pattern": "accruedincometaxes",
+                "priority": 1
+            }
+        ],
+        "income_taxes_paid": [
+            {
+                "pattern": "incometaxespaid",
+                "priority": 1
+            }
+        ],
+        "income_taxes_refunded": [
+            {
+                "pattern": "incometaxesrefunded",
+                "priority": 1
+            }
+        ],
+        "interest_paid": [
+            {
+                "pattern": "interestpaid",
+                "priority": 1
+            }
+        ],
+        "interest_received": [
+            {
+                "pattern": "interestreceived",
+                "priority": 1
+            }
+        ],
+        "net_cash_investing": [
+            {
+                "pattern": "netcashusedininvestingactivities",
+                "priority": 1
+            }
+        ],
+        "capital_expenditure": [
+            {
+                "pattern": "paymentsforpropertyandequipment",
+                "priority": 1
+            }
+        ],
+        "acquisition_of_businesses": [
+            {
+                "pattern": "purchaseofbusiness",
+                "priority": 1
+            },
+            {
+                "pattern": "acquisitionofsubsidiaries",
+                "priority": 2
+            }
+        ],
+        "proceeds_from_disposal": [
+            {
+                "pattern": "proceedsfromsaleofpropertyandequipment",
+                "priority": 1
+            },
+            {
+                "pattern": "proceedsfromsaleofassets",
+                "priority": 2
+            },
+            {
+                "pattern": "proceedsfrom.*",
+                "priority": 3
+            }
+        ],
+        "proceeds_from_maturities": [
+            {
+                "pattern": "proceedsfrommaturitiesofinvestments",
+                "priority": 1
+            }
+        ],
+        "net_cash_financing": [
+            {
+                "pattern": "netcashusedinfinancingactivities",
+                "priority": 1
+            }
+        ],
+        "debt_issuance": [
+            {
+                "pattern": "proceedsfromissuanceoflongtermdebt",
+                "priority": 1
+            }
+        ],
+        "debt_repayments": [
+            {
+                "pattern": "repaymentsoflongtermdebt",
+                "priority": 1
+            }
+        ],
+        "short_term_borrowings": [
+            {
+                "pattern": "proceedsfromshorttermborrowings",
+                "priority": 1
+            }
+        ],
+        "repayment_of_short_term_borrowings": [
+            {
+                "pattern": "repaymentsofshorttermborrowings",
+                "priority": 1
+            }
+        ],
+        "dividends_paid_to_common": [
+            {
+                "pattern": "dividendspaidtocommon",
+                "priority": 1
+            },
+            {
+                "pattern": "dividendspaidtocommonstockholders",
+                "priority": 2
+            },
+            {
+                "pattern": "cashdividendspaidcommon",
+                "priority": 3
+            }
+        ],
+        "dividends_paid_to_minority": [
+            {
+                "pattern": "dividendspaidtominority",
+                "priority": 1
+            },
+            {
+                "pattern": "dividendspaidtominorityinterests",
+                "priority": 2
+            },
+            {
+                "pattern": "cashdividendspaidminority",
+                "priority": 3
+            }
+        ],
+        "dividends_paid_to_nci": [
+            {
+                "pattern": "dividendspaidtononcontrollinginterest",
+                "priority": 1
+            }
+        ],
+        "purchase_of_stock": [
+            {
+                "pattern": "purchaseofcompanystock",
+                "priority": 1
+            },
+            {
+                "pattern": "sharebuyback",
+                "priority": 2
+            },
+            {
+                "pattern": "sharerepurchase",
+                "priority": 2
+            }
+        ],
+        "stock_issuance": [
+            {
+                "pattern": "proceedsfromissuanceofcommonstock",
+                "priority": 1
+            }
+        ],
+        "stock_repurchase": [
+            {
+                "pattern": "purchasesofcommonstock",
+                "priority": 1
+            },
+            {
+                "pattern": "treasurystockrepurchased",
+                "priority": 2
+            }
+        ],
+        "net_increase_cash": [
+            {
+                "pattern": "netincrease(?:\\(decrease\\))?incashequivalents",
+                "priority": 1
+            }
+        ],
+        "free_cash_flow": [
+            {
+                "pattern": "freecashflow",
+                "priority": 1
+            },
+            {
+                "pattern": "fcf",
+                "priority": 2
+            }
+        ],
+        "stock_based_compensation": [
+            {
+                "pattern": "stockbasedcompensationexpense",
+                "priority": 1
+            },
+            {
+                "pattern": "sharebasedcompensation",
+                "priority": 2
+            },
+            {
+                "pattern": "stockoptionexpense",
+                "priority": 3
+            }
+        ],
+        "lease_liabilities_paid": [
+            {
+                "pattern": "paymentsofprincipalleaseobligations",
+                "priority": 1
+            },
+            {
+                "pattern": "leasepayments",
+                "priority": 2
+            }
+        ],
+        "proceeds_from_preferred_stock": [
+            {
+                "pattern": "proceedsfromissuanceofpreferredstock",
+                "priority": 1
+            }
+        ],
+        "net_income": [
+            {
+                "pattern": "consolidatednetincome",
+                "priority": 1
+            },
+            {
+                "pattern": "netincome",
+                "priority": 2
+            }
+        ],
+        "business_acquisitions": [
+            {
+                "pattern": "paymentsforbusinessacquisitions",
+                "priority": 1
+            },
+            {
+                "pattern": "acquisitionsofsubsidiaries",
+                "priority": 2
+            }
+        ],
+        "other_investing_activities": [
+            {
+                "pattern": "otherinvestingactivities",
+                "priority": 1
+            }
+        ],
+        "purchase_noncontrolling_interest": [
+            {
+                "pattern": "purchaseofnoncontrollinginterest",
+                "priority": 1
+            }
+        ],
+        "proceeds_from_subsidiary_stock_sale": [
+            {
+                "pattern": "saleofsubsidiarystock",
+                "priority": 1
+            },
+            {
+                "pattern": "issuanceofsubsidiarystock",
+                "priority": 2
+            }
+        ],
+        "other_financing_activities": [
+            {
+                "pattern": "otherfinancingactivities",
+                "priority": 1
+            }
+        ],
+        "fx_effect_on_cash": [
+            {
+                "pattern": "effectofexchangeratesoncash",
+                "priority": 1
+            },
+            {
+                "pattern": "exchangerateimpact",
+                "priority": 2
+            }
+        ],
+        "non_cash_investing": [
+            {
+                "pattern": "noncashinvestingactivities",
+                "priority": 1
+            },
+            {
+                "pattern": "noncashinvesting",
+                "priority": 2
+            },
+            {
+                "pattern": "capitalizedleases",
+                "priority": 3
+            }
+        ],
+        "non_cash_financing": [
+            {
+                "pattern": "noncashfinancingactivities",
+                "priority": 1
+            },
+            {
+                "pattern": "conversionofdebttoequity",
+                "priority": 2
+            },
+            {
+                "pattern": "conversionofdebttoequityandother",
+                "priority": 3
+            }
+        ],
+        "cash_beginning": [
+            {
+                "pattern": "cashequivalentsatbeginning",
+                "priority": 1
+            },
+            {
+                "pattern": "cashatbeginningofyear",
+                "priority": 2
+            }
+        ],
+        "cash_end": [
+            {
+                "pattern": "cashequivalentsatend",
+                "priority": 1
+            },
+            {
+                "pattern": "cashatendofyear",
+                "priority": 2
+            }
+        ],
+        "purchases_of_solar_energy_systems_net_of_sales": [
+            {
+                "pattern": "^purchases.*solar.*energy.*systems.*net.*sales.*",
+                "priority": 2
+            }
+        ],
+        "receipt_of_government_grants": [
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 2
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^receipt.*government.*grants.*",
+                "priority": 1
+            }
+        ],
+        "cash_from_operations": [
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^net.*cash.*provided.*by.*operating.*activities.*",
+                "priority": 1
+            }
+        ],
+        "capex": [
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            },
+            {
+                "pattern": "^purchases.*property.*equipment.*excluding.*finance.*leases.*net.*sales.*",
+                "priority": 1
+            }
+        ]
+    }
+}

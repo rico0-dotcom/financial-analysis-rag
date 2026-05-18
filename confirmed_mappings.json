@@ -1,0 +1,348 @@
+{
+    "income": [
+        {
+            "original_label": "0",
+            "key": "financial_statement_label",
+            "timestamp": "2025-06-03T15:11:02.778866"
+        },
+        {
+            "original_label": "1",
+            "key": "financial_statement_label",
+            "timestamp": "2025-06-03T15:11:04.842704"
+        },
+        {
+            "original_label": "2",
+            "key": "financial_statement_label",
+            "timestamp": "2025-06-03T15:11:06.337696"
+        },
+        {
+            "original_label": "3",
+            "key": "financial_statement_label",
+            "timestamp": "2025-06-03T15:11:07.866526"
+        },
+        {
+            "original_label": "4",
+            "key": "financial_statement_label",
+            "timestamp": "2025-06-03T15:11:09.246979"
+        },
+        {
+            "original_label": "5",
+            "key": "financial_statement_label",
+            "timestamp": "2025-06-03T15:11:10.981643"
+        },
+        {
+            "original_label": "6",
+            "key": "financial_statement_label",
+            "timestamp": "2025-06-03T15:11:12.647617"
+        },
+        {
+            "original_label": "7",
+            "key": "financial_statement_label_7",
+            "timestamp": "2025-06-03T15:11:14.404582"
+        },
+        {
+            "original_label": "8",
+            "key": "financial_statement_label_8",
+            "timestamp": "2025-06-03T15:11:16.064364"
+        },
+        {
+            "original_label": "9",
+            "key": "financial_statement_label_9",
+            "timestamp": "2025-06-03T15:11:17.645540"
+        },
+        {
+            "original_label": "10",
+            "key": "financial_statement_label_10",
+            "timestamp": "2025-06-03T15:11:19.669423"
+        },
+        {
+            "original_label": "11",
+            "key": "financial_statement_label_11",
+            "timestamp": "2025-06-03T15:11:21.367712"
+        },
+        {
+            "original_label": "indefinitelived intangible asset impairment charge nan",
+            "key": "indefinitelived_intangible_asset_impairment_charge",
+            "timestamp": "2025-06-03T18:59:27.030971"
+        },
+        {
+            "original_label": "membership and other income",
+            "key": "membership_and_other_income",
+            "timestamp": "2025-06-03T19:02:45.754129"
+        },
+        {
+            "original_label": "finance lease",
+            "key": "finance_lease_expense",
+            "timestamp": "2025-06-03T19:02:49.379295"
+        },
+        {
+            "original_label": "auditor firm id",
+            "key": "auditor_firm_id",
+            "timestamp": "2025-06-04T00:44:07.856867"
+        },
+        {
+            "original_label": "cash and cash equivalents",
+            "key": "cash_and_cash_equivalents",
+            "timestamp": "2025-06-04T01:07:18.403329"
+        },
+        {
+            "original_label": "shortterm investments",
+            "key": "shortterm_investments",
+            "timestamp": "2025-06-04T01:07:20.111992"
+        },
+        {
+            "original_label": "accounts receivable net",
+            "key": "accounts_receivable_net",
+            "timestamp": "2025-06-04T01:07:21.831636"
+        },
+        {
+            "original_label": "inventory",
+            "key": "inventory",
+            "timestamp": "2025-06-04T01:07:24.651668"
+        },
+        {
+            "original_label": "prepaid expenses and other current assets",
+            "key": "prepaid_expenses_and_other_current_assets",
+            "timestamp": "2025-06-04T01:07:26.563333"
+        },
+        {
+            "original_label": "total current assets",
+            "key": "total_current_assets",
+            "timestamp": "2025-06-04T01:07:28.207426"
+        },
+        {
+            "original_label": "property plant and equipment net",
+            "key": "property_plant_and_equipment_net",
+            "timestamp": "2025-06-04T01:07:30.546796"
+        },
+        {
+            "original_label": "operating lease rightofuse assets",
+            "key": "operating_lease_rightofuse_assets",
+            "timestamp": "2025-06-04T01:07:32.559945"
+        },
+        {
+            "original_label": "digital assets net",
+            "key": "digital_assets_net",
+            "timestamp": "2025-06-04T01:07:34.317528"
+        },
+        {
+            "original_label": "intangible assets net",
+            "key": "intangible_assets_net",
+            "timestamp": "2025-06-04T01:07:36.244137"
+        },
+        {
+            "original_label": "goodwill",
+            "key": "goodwill",
+            "timestamp": "2025-06-04T01:07:38.179374"
+        },
+        {
+            "original_label": "deferred tax assets",
+            "key": "deferred_tax_assets",
+            "timestamp": "2025-06-04T01:07:40.865100"
+        },
+        {
+            "original_label": "other noncurrent assets",
+            "key": "other_noncurrent_assets",
+            "timestamp": "2025-06-04T01:07:42.851853"
+        },
+        {
+            "original_label": "total assets",
+            "key": "total_assets",
+            "timestamp": "2025-06-04T01:07:45.045457"
+        },
+        {
+            "original_label": "accounts payable",
+            "key": "accounts_payable",
+            "timestamp": "2025-06-04T01:07:47.036025"
+        },
+        {
+            "original_label": "accrued liabilities and other",
+            "key": "accrued_liabilities_and_other",
+            "timestamp": "2025-06-04T01:07:49.144416"
+        },
+        {
+            "original_label": "current portion of debt and finance leases",
+            "key": "current_portion_of_debt_and_finance_leases",
+            "timestamp": "2025-06-04T01:07:51.347930"
+        },
+        {
+            "original_label": "total current liabilities",
+            "key": "total_current_liabilities",
+            "timestamp": "2025-06-04T01:07:53.439659"
+        },
+        {
+            "original_label": "other longterm liabilities",
+            "key": "other_longterm_liabilities",
+            "timestamp": "2025-06-04T01:07:55.405294"
+        },
+        {
+            "original_label": "total liabilities",
+            "key": "total_liabilities",
+            "timestamp": "2025-06-04T01:07:57.576342"
+        },
+        {
+            "original_label": "preferred stock 0001 par value 100 shares authorized no shares issued and outstanding",
+            "key": "preferred_stock_par_value_no_shares_issued_outstanding",
+            "timestamp": "2025-06-04T01:08:00.041909"
+        },
+        {
+            "original_label": "common stock 0001 par value 6000 shares authorized 3216 and 3185 shares issued and outstanding as of december\u00a031 2024 and december\u00a031 2023 respectively",
+            "key": "common_stock_par_value_shares_authorized_issued_outstanding",
+            "timestamp": "2025-06-04T01:08:02.436860"
+        },
+        {
+            "original_label": "additional paidin capital",
+            "key": "additional_paid_in_capital",
+            "timestamp": "2025-06-04T01:08:05.049328"
+        },
+        {
+            "original_label": "accumulated other comprehensive loss",
+            "key": "accumulated_other_comprehensive_loss",
+            "timestamp": "2025-06-04T01:08:07.365969"
+        },
+        {
+            "original_label": "retained earnings",
+            "key": "retained_earnings",
+            "timestamp": "2025-06-04T01:08:09.790059"
+        },
+        {
+            "original_label": "total stockholders equity",
+            "key": "total_stockholders_equity",
+            "timestamp": "2025-06-04T01:08:11.852556"
+        },
+        {
+            "original_label": "operating lease vehicles net",
+            "key": "operating_lease_vehicles_net",
+            "timestamp": "2025-06-04T01:08:14.027476"
+        },
+        {
+            "original_label": "solar energy systems net",
+            "key": "solar_energy_systems_net",
+            "timestamp": "2025-06-04T01:08:16.237107"
+        },
+        {
+            "original_label": "research and development",
+            "key": "research_and_development_expenses",
+            "timestamp": "2025-06-07T16:31:22.477931"
+        },
+        {
+            "original_label": "restructuring and other",
+            "key": "restructuring_and_other",
+            "timestamp": "2025-06-07T16:31:25.627200"
+        }
+    ],
+    "balance": [
+        {
+            "original_label": "revenues",
+            "key": "revenues",
+            "timestamp": "2025-06-04T01:06:48.213311"
+        },
+        {
+            "original_label": "total cost of revenues",
+            "key": "total_cost_of_revenues",
+            "timestamp": "2025-06-04T01:06:50.104767"
+        },
+        {
+            "original_label": "gross profit",
+            "key": "gross_profit",
+            "timestamp": "2025-06-04T01:06:52.203362"
+        },
+        {
+            "original_label": "research and development",
+            "key": "research_and_development",
+            "timestamp": "2025-06-04T01:06:54.474112"
+        },
+        {
+            "original_label": "selling general and administrative",
+            "key": "selling_general_and_administrative",
+            "timestamp": "2025-06-04T01:06:56.781880"
+        },
+        {
+            "original_label": "restructuring and other",
+            "key": "restructuring_and_other",
+            "timestamp": "2025-06-04T01:06:59.016654"
+        },
+        {
+            "original_label": "income from operations",
+            "key": "income_from_operations",
+            "timestamp": "2025-06-04T01:07:02.573912"
+        },
+        {
+            "original_label": "interest income",
+            "key": "interest_income",
+            "timestamp": "2025-06-04T01:07:04.519738"
+        },
+        {
+            "original_label": "interest expense",
+            "key": "interest_expense",
+            "timestamp": "2025-06-04T01:07:06.535694"
+        },
+        {
+            "original_label": "other income expense net",
+            "key": "other_income_expense_net",
+            "timestamp": "2025-06-04T01:07:08.411022"
+        },
+        {
+            "original_label": "income before income taxes",
+            "key": "income_before_income_taxes",
+            "timestamp": "2025-06-04T01:07:10.256666"
+        },
+        {
+            "original_label": "provision for benefit from income taxes",
+            "key": "provision_for_benefit_from_income_taxes",
+            "timestamp": "2025-06-04T01:07:12.216757"
+        },
+        {
+            "original_label": "net income",
+            "key": "net_income",
+            "timestamp": "2025-06-04T01:07:14.509859"
+        },
+        {
+            "original_label": "diluted in shares",
+            "key": "diluted_in_shares",
+            "timestamp": "2025-06-04T01:07:16.471159"
+        },
+        {
+            "original_label": "shortterm investments",
+            "key": "short_term_investments",
+            "timestamp": "2025-06-07T16:30:58.908120"
+        },
+        {
+            "original_label": "digital assets net",
+            "key": "digital_assets_net",
+            "timestamp": "2025-06-07T16:31:02.008701"
+        },
+        {
+            "original_label": "intangible assets net",
+            "key": "intangible_assets_net",
+            "timestamp": "2025-06-07T16:31:03.698451"
+        },
+        {
+            "original_label": "other longterm liabilities",
+            "key": "other_longterm_liabilities",
+            "timestamp": "2025-06-07T16:31:07.500562"
+        },
+        {
+            "original_label": "solar energy systems net",
+            "key": "solar_energy_systems_net",
+            "timestamp": "2025-06-07T16:31:13.233643"
+        }
+    ],
+    "cashflow": [
+        {
+            "original_label": "Receipt of government grants",
+            "key": "receipt_of_government_grants",
+            "timestamp": "2025-05-30T20:45:37.216906"
+        },
+        {
+            "original_label": "Net cash provided by operating activities",
+            "key": "cash_from_operations",
+            "timestamp": "2025-05-31T16:23:02.106830"
+        },
+        {
+            "original_label": "Purchases of property and equipment excluding finance leases, net of sales",
+            "key": "capex",
+            "timestamp": "2025-05-31T16:23:02.110010"
+        }
+    ]
+}

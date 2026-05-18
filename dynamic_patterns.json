@@ -1,0 +1,31 @@
+{
+    "income": {
+        "interest_expense": [
+            {
+                "pattern": "^debt.*",
+                "priority": 3
+            }
+        ],
+        "noncontrolling_interest": [
+            {
+                "pattern": "^consolidated.*net.*income.*loss.*attributable.*to.*noncontrolling.*interest.*",
+                "priority": 3
+            }
+        ]
+    },
+    "balance": {},
+    "cashflow": {
+        "short_term_borrowings": [
+            {
+                "pattern": "^net.*change.*shortterm.*borrowings.*",
+                "priority": 3
+            }
+        ],
+        "net_increase_cash": [
+            {
+                "pattern": "^net.*increase.*decrease.*cash.*cash.*equivalents.*restricted.*cash.*",
+                "priority": 3
+            }
+        ]
+    }
+}

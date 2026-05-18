@@ -107,15 +107,22 @@ Example:
 
 ---
 
-## 3. Feedback-Driven Mapping System
+## 3. Adaptive Pattern Framework
 
-The system includes a persistent mapping framework:
+The system maintains three layers of mapping intelligence:
 
-- Stores validated mappings in JSON format
-- Reuses mappings across runs
-- Supports auditability and reproducibility
-- Human-in-the-loop review for ambiguous matches
+1. Base rule patterns  
+   - Static financial terminology mappings  
+   - Rule-driven extraction logic  
 
+2. Dynamic pattern generation  
+   - Automatically generated regex-based matching patterns  
+   - Adaptive semantic normalization  
+
+3. Confirmed mapping memory  
+   - Stores validated mappings across runs  
+   - Enables feedback-driven refinement  
+   - Supports reproducibility and auditability  
 ---
 
 ## 4. Data Structuring
@@ -198,7 +205,26 @@ working of ratioEngine20mb.mp4
 ```
 
 ---
+# Repository Structure
 
+```text
+financial-statement-analysis-system/
+│
+├── Sheet_classification.ipynb
+├── financial_parsing_horizontal.py
+├── ratio.py
+│
+├── mapping_patterns.json
+├── dynamic_patterns.json
+├── confirmed_mappings.json
+│
+├── requirements.txt
+├── Walmart_financial_report.xlsx
+├── working of ratioEngine20mb.mp4
+├── ratio engine flowchart.png
+│
+└── README.md
+```
 
 ---
 
@@ -208,7 +234,9 @@ working of ratioEngine20mb.mp4
 |---|---|
 | `financial_parsing_horizontal.py` | Hybrid financial statement extraction pipeline |
 | `ratio.py` | Ratio computation and analytical engine |
-| `mapping.json` | Persistent validated financial mappings |
+| `mapping_patterns.json` | Base rule and pattern definitions for financial statement mapping |
+| `dynamic_patterns.json` | Dynamically generated semantic and regex-based mapping patterns |
+| `confirmed_mappings.json` | Persistent validated mappings collected through feedback-driven confirmation |
 | `Walmart_financial_report.xlsx` | Example financial disclosure input |
 | `working of ratioEngine20mb.mp4` | End-to-end demonstration |
 | `ratio engine flowchart.png` | System architecture diagram |
@@ -235,7 +263,7 @@ working of ratioEngine20mb.mp4
 
 - Handles heterogeneous financial statement formats
 - Hybrid symbolic + semantic extraction framework
-- Persistent mapping architecture
+- Adaptive feedback-driven mapping framework for persistent financial label standardization
 - Human-in-the-loop validation
 - Multi-period financial analysis
 - Custom ratio framework
